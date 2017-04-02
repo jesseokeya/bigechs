@@ -19,9 +19,9 @@ class Header extends React.Component {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <a className="navbar-brand">
-                        <h3 className="logoname">
+                        <h4 className="logoname">
                             {this.state.title}
-                        </h3>
+                        </h4>
                     </a>
                     <div className="collapse navbar-collapse" id="mainNav">
                         <div className="navbar-nav">
