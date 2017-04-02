@@ -1,0 +1,27 @@
+body {
+    background-color: #F2F4F4;
+}
+
+.logoname {
+    margin-left: 20px;
+    color: white;
+}
+
+.intro {
+    background: url('https://i.ytimg.com/vi/1jIKF-o2VMM/maxresdefault.jpg') no-repeat;
+    background-size: 100%;
+}
+
+.card {
+    margin-top: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+.contact-info{
+  padding: 7px;
+}
