@@ -1,4 +1,4 @@
-let debug = process.env.NODE_ENV === "production";
+let debug = process.env.NODE_ENV !== "production";
 let webpack = require('webpack');
 
 module.exports = {

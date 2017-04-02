@@ -1,6 +1,6 @@
 let menuInfo = [
   {
-    img: 'https://www.bellanaija.com/wp-content/uploads/2015/11/Jollof-Rice-Fried-Rice-Coleslaw-Salad-Stewed-Chicken-Stewed-Beef-Moinmoin-Nigerian-Wedding.jpg',
+    img: './images/pic01.jpg',
     title: 'Main',
     text: [
       ' Jollof Rice + Chicken - $10 ',
@@ -9,7 +9,7 @@ let menuInfo = [
 
   },
   {
-    img: 'http://1.bp.blogspot.com/-Tdb3hEYTpkA/T8QlumAJ0JI/AAAAAAAAAsg/knwpfzxVme4/s1600/gizdodo-1.jpg',
+    img: './images/pic04.jpg',
     title: 'Sides',
     text: [
       ' Fried Plantain - $2 ',
@@ -18,7 +18,7 @@ let menuInfo = [
     ]
   },
   {
-    img: 'http://myactivekitchen.com/wp-content/uploads/2015/12/chicken-stew3.jpg',
+    img: './images/pic03.jpg',
     title: 'House Deal',
     text: [
       ' Rice + Chicken + Gizdodo - $15 ',
@@ -28,7 +28,7 @@ let menuInfo = [
 
   },
   {
-    img: 'https://4.bp.blogspot.com/-8YhrmkoghaY/VO0OcnwsT3I/AAAAAAAAAxQ/uOaTKwhA2cI/s1600/z15471862Q%2Cshutterstock.jpg',
+    img: './images/drinks.jpg',
     title: 'Drinks',
     text: [
       'Pop - $2'
