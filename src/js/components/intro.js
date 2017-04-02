@@ -34,7 +34,11 @@ class Intro extends React.Component {
                     <h3 className="display-5">
                         Welcome to {this.state.title}
                     </h3>
-                    <p className="lead">Nigerian Food Fast Delivery Within Carleton</p>
+                    <p className="lead">
+                      <strong>
+                        Nigerian Food Fast Delivery Within Carleton
+                      </strong>
+                      </p>
                     <button type="button" className="btn btn-primary btn-lg" onClick={this.handleClick}>
                         Order Now
                     </button>
