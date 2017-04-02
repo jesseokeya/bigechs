@@ -26,7 +26,7 @@ class Header extends React.Component {
                     <div className="collapse navbar-collapse" id="mainNav">
                         <div className="navbar-nav">
                             <a className="nav-item nav-link active">
-                                <button type="button" className="btn btn-danger btn-md" onClick={this.showContactInfo}>
+                                <button type="button" className="btn btn-outline-danger btn-lg" onClick={this.showContactInfo}>
                                     Contact
                                 </button>
                             </a>
