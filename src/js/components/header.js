@@ -48,22 +48,26 @@ class Header extends React.Component {
                                         <li className="list-group-item list-group-item-success">
                                             Phone1:
                                             <span className="contact-info">
-                                                (613) 890-9733
+                                                <a href="tel:6138909733">
+                                                    (613) 890-9733
+                                                </a>
                                             </span>
                                         </li>
                                         <li className="list-group-item list-group-item-info">
                                             Phone2:
                                             <span className="contact-info">
-                                                (613) 869-7075
+                                                <a href="tel:6138697075">
+                                                    (613) 869-7075
+                                                </a>
                                             </span>
                                         </li>
                                         <li className="list-group-item list-group-item-danger">
-                                            <a href="mailto: bigechskichen@gmail.com">
-                                                Email:
-                                                <span className="contact-info">
-                                                    bigechskichen@gmail.com
-                                                </span>
-                                            </a>
+                                            Email:
+                                            <span className="contact-info">
+                                                <a href="mailto: bigechskitchen@gmail.com">
+                                                    bigechskitchen@gmail.com
+                                                </a>
+                                            </span>
                                         </li>
                                     </ul>
                                 </div>
