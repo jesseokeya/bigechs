@@ -1,4 +1,4 @@
-let debug = process.env.NODE_ENV === "production";
+let debug = process.env.NODE_ENV !== "production";
 let webpack = require('webpack');
 
 module.exports = {
@@ -28,7 +28,7 @@ module.exports = {
             }
         ]
     },
-    plugins: debug ? [] : [
+     plugins: debug ? [] : [
         new webpack.optimize.DedupePlugin(),
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.optimize.UglifyJsPlugin({

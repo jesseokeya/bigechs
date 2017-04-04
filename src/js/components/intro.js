@@ -21,11 +21,15 @@ class Intro extends React.Component {
             email: document.getElementById('email').value,
             order: document.getElementById('order').value
         }
-        fetch('http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=8&q=http://rss.cnn.com/rss/edition_entertainment.rss?output=rss', {
-            method: 'get',
-            mode: 'no-cors'
-        }).then(() => {
-            console.log('Works!');
+        let url = 'https://bigetchs-api.herokuapp.com/placeOrder';
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(orderInfo)
+        }).then((response) => {
+            console.log(response);
         });
         $('#myModal').modal('hide');
         setTimeout(() => {

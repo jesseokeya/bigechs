@@ -10,7 +10,7 @@ gulp.task('serve', ['nodemon'], function() {
     browserSync.init(null, {
         proxy: "http://localhost:8080/src",
         files: ['./src/**/*.html', './src/**/**/*.js'],
-        browser: "safari" || "google chrome",
+        browser: "google chrome" || "safari",
         port: 3000
     });
     browserSync.reload
