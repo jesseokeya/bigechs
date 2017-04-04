@@ -32,10 +32,12 @@
   },
   "dependencies": {
     "browser-sync": "^2.18.8",
+    "cors": "^2.8.3",
     "express": "^4.15.2",
     "gzippo": "^0.2.0",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.8",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "whatwg-fetch": "^2.0.3"
   }
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import 'whatwg-fetch';
 import './css/styles.css';
 
 class Intro extends React.Component {
@@ -12,6 +13,7 @@ class Intro extends React.Component {
         $('#myModal').modal({show: true});
         $('#sucess').hide();
     }
+
     handleSubmit() {
         let orderInfo = {
             name: document.getElementById('name').value,
@@ -19,17 +21,21 @@ class Intro extends React.Component {
             email: document.getElementById('email').value,
             order: document.getElementById('order').value
         }
-        console.log(orderInfo);
+        fetch('http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=8&q=http://rss.cnn.com/rss/edition_entertainment.rss?output=rss', {
+            method: 'get',
+            mode: 'no-cors'
+        }).then(() => {
+            console.log('Works!');
+        });
         $('#myModal').modal('hide');
         setTimeout(() => {
             alert(' Order Successfully Placed!! 😁 ');
         }, 1000);
 
     }
-
     render() {
         return (
-            <div className="intro jumbotron jumbotron-fluid bg-inverse text-black text-center" >
+            <div className="intro jumbotron jumbotron-fluid bg-inverse text-black text-center">
                 <div className="container">
                     <h3 className="display-5">
                         Welcome to {this.state.title}

@@ -10,7 +10,7 @@ class Footer extends React.Component {
                 <div className="footer-bottom">
                     <div className="container">
                         <p className="pull-left">
-                            Copyright © Big ech's. All right reserved.
+                            <b>Copyright © Big Ech's. All right reserved.</b>
                         </p>
                     </div>
                 </div>
