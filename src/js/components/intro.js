@@ -1,6 +1,11 @@
 import React from 'react';
 import 'whatwg-fetch';
 import './css/styles.css';
+import Config from './config.js';
+
+const url = Config.hosted;
+const appMode = (url == Config.local) ? 'Development Mode' : 'Production Mode';
+console.log(appMode);
 
 class Intro extends React.Component {
     constructor() {
@@ -21,7 +26,6 @@ class Intro extends React.Component {
             email: document.getElementById('email').value,
             order: document.getElementById('order').value
         }
-        let url = 'https://bigetchs-api.herokuapp.com/placeOrder';
         fetch(url, {
             method: 'POST',
             headers: {
